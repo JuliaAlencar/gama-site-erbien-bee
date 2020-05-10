@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="icon" type="imagem/png" href="Imagens/Erbien_bee_logo.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 	</head>
 	
 	<body>
@@ -23,11 +24,11 @@
 								<span class="navbar-toggler-icon"></span>
 							</button>
 				
-						<div class="col-xs-12 col-md-6  col-lg-4">
-							<div class="collapse navbar-collapse" id="navbarSupportedContent">
-								<ul class="navbar-nav mr-auto">
-									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<div id="navRight" class="col-xs-12 col-md-6  col-lg-4">
+							<div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+								<ul class="navbar-nav mr-auto flex-nowrap">
+									<li class="nav-item dropdown" display="align">
+										<a  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										  <img id="globe" class="img-responsive" src="./Imagens/globe.png" alt="Brasil"/>
 										</a>
 										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -54,29 +55,37 @@
 		</header>
 		
 		<main class="container">
-			<h1> Hospedagens com doçura </h1><br/>
+			<h1 class="display-4"> Hospedagens com doçura </h1><br/>
 			<div id="especificacoes" class="row">
 				<div class="col-xs-12 col-md-6  col-lg-3">
 					<label>DESTINO</label>
 					<input type="text" placeholder="Vai pra onde?">
 				</div>
-				<div class="col-xs-12 col-md-6  col-lg-3">
-					<label>CHECK-IN / CHECKOUT</label>
-					<input type="text" placeholder="dd/mm/aaaa">
+				<div class="col-xs-12 col-md-6  col-lg-2">
+					<label>CHECK-IN</label>
+					<input id="dia_inicial" type="date" placeholder="dd/mm/aaaa">
+				</div>
+				<div class="col-xs-12 col-md-6  col-lg-2">
+					<label>CHECKOUT</label>
+					<input id="dia_final" type="date" placeholder="dd/mm/aaaa">
 				</div>
 				<div class="col-xs-12 col-md-6  col-lg-3">
 					<label>HÓSPEDES</label>
-					<input type="text" placeholder="Número de hóspedes">
+					<input id="num_hospedes" type="number" placeholder="Núm. de hóspedes">
 				</div>
 				<div class="col-xs-12 col-md-6  col-lg-1">
-					<button class="btn btn-warning my-2 my-sm-0" type="submit">
+					<button class="btn btn-warning" type="search-btn" onclick="botaoClick()"> <!--my-2 my-sm-0-->
 						<img id="traveler" src="./Imagens/traveler.png" width="100%"/>
 						IR
 					</button>					
 				</div>
 			</div>
+			
 			<a href="#" class="btn btn-link btn-md btn-block" type="button">Ver mais</a>			
 			
+			<div id="propriedades" class="container-fluid cards">
+
+			</div>
 		</main>
 		
 		<footer class="footer">
@@ -86,9 +95,9 @@
             </p>
         </div>
     </footer>
-		
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+		<script type="text/javascript" src="./script.js"></script>
 	</body>
 </html>

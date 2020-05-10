@@ -4,6 +4,15 @@ body{
 	margin: 0px;
 	padding: 0px;
 }
+
+::placeholder{
+	font-size: small;
+}
+
+input[type=date]{
+	font-size: small;
+}
+
 header{
 	background-color: #ffffff;
 	margin: 0px;
@@ -16,7 +25,7 @@ header{
 }
 
 main{
-	margin-top: 170px;
+	margin-top: 100px;
 }
 
 body h1{
@@ -25,10 +34,14 @@ body h1{
 	text-shadow: 2px 2px 5px #ededed;
 }
 
-img {
+img{
 	display: flex;
 	max-width: 100%;
 	height: auto;
+}
+
+#globe{
+	max-width:30px;
 }
 
 #especificacoes{
@@ -57,7 +70,7 @@ label{
 }
 
 footer{
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     background-color: #ededed;
     display: fixed;
