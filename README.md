@@ -1,0 +1,1 @@
+Projeto desenvolvido durante o programa Hiring Coders da Gama Academy. O desafio consistia no desenvolvimento de uma página semelhante à do Airbnb, consumindo dados de uma API.
