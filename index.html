@@ -12,44 +12,39 @@
 	<body>
 		<header>
 			<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #ededed;">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-md-6  col-lg-3">
-							<a class="navbar-brand" href="index.html">
-								<img class="img-responsive" id="full_logo" src="./Imagens/Erbien_bee_full_logo.png" alt="Erbien bee" width="100%"/>
-							</a>
-						</div>
-				
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon"></span>
-							</button>
-				
-						<div id="navRight" class="col-xs-12 col-md-6  col-lg-4">
-							<div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
-								<ul class="navbar-nav mr-auto flex-nowrap">
-									<li class="nav-item dropdown" display="align" >
-										<a  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										  <img id="globe" class="img-responsive" src="./Imagens/globe.png" alt="Brasil"/>
-										</a>
-										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										  <a class="dropdown-item" href="#">Português (BR)</a>
-										  <div class="dropdown-divider"></div>
-										  <a class="dropdown-item" href="#">R$ BRL</a>
-										</div>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Ajuda</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Entrar</a>
-									</li>
-									<li class="button">
-										<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Cadastre-se</button>
-									</li>
-								</ul>
-							</div>
-						</div>
+				<div class="d-flex flex-grow-1">
+					<span class="w-100 d-lg-none d-block"></span>
+					<a class="navbar-brand d-none d-lg-inline-block" href="index.html">
+						<img class="img-responsive" id="full_logo" src="./Imagens/Erbien_bee_full_logo.png" alt="Erbien bee" width="100%"/>
+					</a>
+					<div class="w-100 text-right">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+							<span class="navbar-toggler-icon"></span>
+						</button>
 					</div>
+				</div>
+				<div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+					<ul class="navbar-nav ml-auto flex-nowrap">
+						<li class="nav-item dropdown" display="align" >
+							<a  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							  <img id="globe" class="img-responsive" src="./Imagens/globe.png" alt="Brasil"/>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <a class="dropdown-item" href="#">Português (BR)</a>
+							  <div class="dropdown-divider"></div>
+							  <a class="dropdown-item" href="#">R$ BRL</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Ajuda</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Entrar</a>
+						</li>
+						<li class="button">
+							<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Cadastre-se</button>
+						</li>
+					</ul>
 				</div>
 			</nav>
 		</header>
@@ -71,7 +66,7 @@
 				</div>
 				<div class="col-xs-12 col-md-6  col-lg-3">
 					<label>HÓSPEDES</label>
-					<input id="num_hospedes" type="number" placeholder="Núm. de hóspedes">
+					<input id="num_hospedes" type="number" min="1" placeholder="Núm. de hóspedes">
 				</div>
 				<div class="col-xs-12 col-md-6  col-lg-1">
 					<button class="btn btn-warning" type="search-btn" onclick="botaoClick()"> <!--my-2 my-sm-0-->
