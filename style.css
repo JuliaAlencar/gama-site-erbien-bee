@@ -1,7 +1,7 @@
 body{
 	background-color: #ffffff;
 	font-family: "Trebuchet MS";
-	margin-top: 200px;
+	margin-top: 50px;
 	padding: 0px;
 }
 
@@ -25,7 +25,7 @@ header{
 }
 
 main{
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 body h1{
@@ -43,6 +43,10 @@ img{
 #globe{
 	max-width:30px;
 	margin-top: 5px;
+}
+
+#btnIr{
+	margin-top: 1em;
 }
 
 #traveler{
@@ -83,9 +87,9 @@ img{
 }
 
 #especificacoes{
+	display: flex;
 	align-items: center;
     justify-content: center;
-    display: flex;
     box-shadow: 1px 1px 2px 2px rgb(240, 240, 240);
     border-radius: 15px;
     padding: 15px 15px;
