@@ -112,6 +112,11 @@ label{
 	font-size: small;
 }
 
+#map{
+	margin-top: 10px;
+	background-color: #000000;
+}
+
 footer{
     padding: 40px;
     text-align: center;
