@@ -45,6 +45,10 @@ img{
 	margin-top: 5px;
 }
 
+#traveler{
+	max-width:30px;
+}
+
 #full_logo{
 	max-width:500px;
 }
